@@ -38,10 +38,10 @@ img{
     max-width: 375px;
     height: 100vh;
     text-align: center;
-    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .content{
     background-color: var(--White);
@@ -54,7 +54,6 @@ img{
 }
 .product-description{
     padding: 20px;  
-    /* background-color: red;  */
     text-align: left;
 }
 .bolder{
@@ -96,6 +95,46 @@ button{
     border: none;
     color: var(--White);
     font-weight: 500;
+}
+
+/* BIG SCREEN */
+@media screen and (min-width: 481px) {
+    .container{
+        margin: 0 auto;
+        max-width: 460px;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+   .content{
+        display: flex;
+        background-color: var(--White);
+        border-radius: 20px;
+        justify-content: center;
+        border-radius: 20px;
+        width: 100%;
+   }
+    .image-holder{
+        background-image: url(images/image-product-desktop.jpg);
+        width: 50%;
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .product-description{
+        width: 50%;
+    }
+    .image-holder img{
+        display: none;
+        width: 100%;
+    }
+    bolder{
+        white-space: normal;
+    }
 }
 
 .attribution { 
