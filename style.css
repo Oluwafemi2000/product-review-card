@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+--font-family1: 'Fraunces', serif;
+--font-family2: 'Montserrat', sans-serif; 
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+/* UNIVERSAL RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GENERAL STYLES */
+body{
+    background-color: var(--Cream);
+    Font-size: 14px;
+    height: 100vh;
+    font-family: var(--font-family2);
+    color: var(--Dark-grayish-blue);
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.nowrap{
+    white-space: nowrap;  
+  }
+
+/* MAIN STYLE */
+.container{
+    margin: 0 auto;
+    max-width: 375px;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    background-color: var(--White);
+    border-radius: 20px;
+    width: 270px;
+}
+.image-holder img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.product-description{
+    padding: 20px;  
+    /* background-color: red;  */
+    text-align: left;
+}
+.bolder{
+    font-weight: 700;
+    font-family: var(--font-family1);
+    margin: 10px 0;
+    color: var(--Very-dark-blue);
+    font-size: 1.5rem;
+}
+.price{
+    margin: 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+}
+.real-price{
+    color: var(--Dark-cyan);
+    font-weight: 700;
+    font-family: var(--font-family1);
+    font-size: 2rem;
+}
+.discount{
+    text-decoration: line-through;
+}
+.button{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--Dark-cyan);
+    padding: 0.8rem 4.1rem;
+    border-radius: 5px;
+}
+button{
+    background-color: var(--Dark-cyan);
+    font-size: inherit;
+    border: none;
+    color: var(--White);
+    font-weight: 500;
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    padding: 0.5rem 4rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
